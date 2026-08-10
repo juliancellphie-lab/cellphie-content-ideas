@@ -5,148 +5,172 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Cellphie - Ideas de contenido</title>
 <style>
-  :root {
-    --bg: #0a0a0b;
-    --card: #151517;
-    --border: #2a2a2d;
-    --text: #f2f2f0;
-    --muted: #9a9a9e;
-    --accent: #d9c98f;
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--text);
-    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, sans-serif;
-    line-height: 1.5;
-  }
-  header {
-    padding: 48px 24px 24px;
-    text-align: center;
-    border-bottom: 1px solid var(--border);
-  }
-  header .brand {
-    font-size: 14px;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 8px;
-  }
-  header h1 {
-    margin: 0;
-    font-size: 28px;
-    font-weight: 600;
-  }
-  header p {
-    color: var(--muted);
-    margin-top: 8px;
-    font-size: 15px;
-  }
-  main {
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 32px 20px 80px;
-  }
-  section h2 {
-    font-size: 13px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--muted);
-    margin: 40px 0 16px;
-  }
-  .card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    padding: 20px 22px;
-    margin-bottom: 14px;
-  }
-  .card .tag {
-    display: inline-block;
-    font-size: 11px;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--accent);
-    border: 1px solid var(--accent);
-    border-radius: 999px;
-    padding: 3px 10px;
-    margin-bottom: 10px;
-  }
-  .card h3 {
-    margin: 0 0 8px;
-    font-size: 17px;
-  }
-  .card p {
-    margin: 6px 0;
-    color: #d6d6d4;
-    font-size: 14.5px;
-  }
-  .card .meta {
-    color: var(--muted);
-    font-size: 13px;
-  }
-  .empty {
-    color: var(--muted);
-    font-size: 14.5px;
-    padding: 20px 0;
-  }
-  details {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    padding: 14px 20px;
-    margin-bottom: 10px;
-  }
-  summary {
-    cursor: pointer;
-    color: var(--text);
-    font-size: 14.5px;
-    font-weight: 500;
-  }
-  footer {
-    text-align: center;
-    color: var(--muted);
-    font-size: 12.5px;
-    padding: 24px;
-  }
+:root {
+--bg: #0a0a0b;
+--card: #151517;
+--border: #2a2a2d;
+--text: #f2f2f0;
+--muted: #9a9a9e;
+--accent: #d9c98f;
+}
+* { box-sizing: border-box; }
+body {
+margin: 0;
+background: var(--bg);
+color: var(--text);
+font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, sans-serif;
+line-height: 1.5;
+}
+header {
+padding: 48px 24px 24px;
+text-align: center;
+border-bottom: 1px solid var(--border);
+}
+header .brand {
+font-size: 14px;
+letter-spacing: 0.14em;
+text-transform: uppercase;
+color: var(--accent);
+margin-bottom: 8px;
+}
+header h1 {
+margin: 0;
+font-size: 28px;
+font-weight: 600;
+}
+header p {
+color: var(--muted);
+margin-top: 8px;
+font-size: 15px;
+}
+main {
+max-width: 720px;
+margin: 0 auto;
+padding: 32px 20px 80px;
+}
+section h2 {
+font-size: 13px;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+color: var(--muted);
+margin: 40px 0 16px;
+}
+.card {
+background: var(--card);
+border: 1px solid var(--border);
+border-radius: 14px;
+padding: 20px 22px;
+margin-bottom: 14px;
+}
+.card .tag {
+display: inline-block;
+font-size: 11px;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: var(--accent);
+border: 1px solid var(--accent);
+border-radius: 999px;
+padding: 3px 10px;
+margin-bottom: 10px;
+}
+.card h3 {
+margin: 0 0 8px;
+font-size: 17px;
+}
+.card p {
+margin: 6px 0;
+color: #d6d6d4;
+font-size: 14.5px;
+}
+.card .meta {
+color: var(--muted);
+font-size: 13px;
+}
+.imgprompt {
+background: #101012;
+border: 1px dashed var(--border);
+border-radius: 10px;
+padding: 12px 14px;
+margin-top: 10px;
+font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+font-size: 12.5px;
+color: #c9c9c6;
+white-space: pre-wrap;
+}
+.imgprompt .label {
+display: block;
+font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, sans-serif;
+font-size: 11px;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: var(--accent);
+margin-bottom: 6px;
+}
+.empty {
+color: var(--muted);
+font-size: 14.5px;
+padding: 20px 0;
+}
+details {
+background: var(--card);
+border: 1px solid var(--border);
+border-radius: 14px;
+padding: 14px 20px;
+margin-bottom: 10px;
+}
+summary {
+cursor: pointer;
+color: var(--text);
+font-size: 14.5px;
+font-weight: 500;
+}
+footer {
+text-align: center;
+color: var(--muted);
+font-size: 12.5px;
+padding: 24px;
+}
 </style>
 </head>
 <body>
 <header>
-  <div class="brand">Cellphie</div>
-  <h1>Ideas de contenido</h1>
-  <p>Generadas todos los dias a las 9:00 AM, investigando competencia y marcas de otros rubros.</p>
+<div class="brand">Cellphie</div>
+<h1>Ideas de contenido</h1>
+<p>Generadas todos los dias a las 9:00 AM, investigando competencia y marcas de otros rubros.</p>
 </header>
 <main>
-  <section id="hoy">
-    <h2>Hoy</h2>
-    <div class="card">
-      <span class="tag">Viral</span>
-      <h3>Le pusimos brillantes a una funda en vivo</h3>
-      <p><strong>Formato:</strong> reel (trend Y2K/bedazzling, timelapse de manos decorando, audio de tendencia)</p>
-      <p><strong>Gancho/guion:</strong> "Volvio la moda de cubrir todo con brillantitos, asi que lo probamos con una funda" - timelapse de manos pegando strass y charms sobre una funda transparente lisa, con cortes al ritmo del audio. Reveal final mostrando el celular terminado con MagSafe puesto. Cierre a camara: "si te copa el estilo, tenemos la base para que lo hagas vos tambien."</p>
-      <p><strong>Por que puede funcionar:</strong> la estetica Y2K y la tendencia de decorar objetos cotidianos con brillantes esta creciendo fuerte este mes en Instagram, y las fundas son de los pocos productos del rubro donde ese trend aplica de forma natural y divertida; el formato timelapse con reveal final es de los que mas retencion genera, y deja instalada la idea de que hay fundas y accesorios para personalizar sin decirlo como venta directa.</p>
-      <p><strong>Apertura de caption sugerida:</strong> "Se puso de moda ponerle brillantes a todo, y nosotros no nos pudimos aguantar."</p>
-    </div>
-    <div class="card">
-      <span class="tag">Venta directa</span>
-      <h3>Por que tu proximo iPhone puede salir mas barato que el anterior</h3>
-      <p><strong>Formato:</strong> carrusel (4 slides)</p>
-      <p><strong>Gancho/guion:</strong> portada "Si hace un tiempo miraste precios de iPhone y ahora los volviste a mirar, no es tu imaginacion" - slides explicando en simple que bajaron los impuestos de importacion y por eso los precios oficiales de equipos nuevos vienen acomodandose para abajo, sin tecnicismos ni numeros de decretos. Ultima slide con los modelos disponibles hoy en el local y CTA: "te mostramos los precios actualizados, sin sorpresas."</p>
-      <p><strong>Por que puede funcionar:</strong> es una noticia economica real y vigente esta semana que genera dudas concretas en el publico (por que bajo, si me conviene comprar ahora), y explicarla con calma en vez de solo anunciar una oferta refuerza la confianza y el criterio que buscan los clientes de la marca; ademas es un angulo que todavia no se toco y le da actualidad genuina a mostrar precios sin caer en el tono de urgencia gritada.</p>
-      <p><strong>Apertura de caption sugerida:</strong> "Che, ¿los precios de iPhone bajaron en serio o es cosa mia? Te lo explicamos rapido."</p>
-    </div>
-    <div class="card">
-      <span class="tag">Clientes</span>
-      <h3>El tip para no gastar de mas si viajas el finde largo</h3>
-      <p><strong>Formato:</strong> reel corto (tutorial expres, cara + pantalla)</p>
-      <p><strong>Gancho/guion:</strong> "Si te vas de viaje el finde largo, esto te conviene hacer antes de salir" - mostrar en pantalla como activar una eSIM de datos para el destino desde configuracion, sin depender del roaming del chip habitual. Cierre a camara: "3 minutos antes de viajar, y te olvidas del roaming carisimo."</p>
-      <p><strong>Por que puede funcionar:</strong> el feriado del 17 de agosto genera un fin de semana largo con mucha gente viajando, asi que es un tip con timing real y utilidad inmediata para quien ya tiene un iPhone; es contenido pensado 100% para clientes actuales, refuerza que la marca acompaña despues de la compra, y el tutorial expres es de los formatos que mas guardados genera en el rubro.</p>
-      <p><strong>Apertura de caption sugerida:</strong> "Antes de armar la valija para el finde largo, guarda este tip."</p>
-    </div>
-  </section>
-  <section id="historial">
+<section id="hoy">
+<h2>Hoy</h2>
+<div class="card">
+<span class="tag">Viral</span>
+<h3>Le pusimos brillantes a una funda en vivo</h3>
+<p><strong>Formato:</strong> reel (trend Y2K/bedazzling, timelapse de manos decorando, audio de tendencia)</p>
+<p><strong>Gancho/guion:</strong> "Volvio la moda de cubrir todo con brillantitos, asi que lo probamos con una funda" - timelapse de manos pegando strass y charms sobre una funda transparente lisa, con cortes al ritmo del audio. Reveal final mostrando el celular terminado con MagSafe puesto. Cierre a camara: "si te copa el estilo, tenemos la base para que lo hagas vos tambien."</p>
+<p><strong>Por que puede funcionar:</strong> la estetica Y2K y la tendencia de decorar objetos cotidianos con brillantes esta creciendo fuerte este mes en Instagram, y las fundas son de los pocos productos del rubro donde ese trend aplica de forma natural y divertida; el formato timelapse con reveal final es de los que mas retencion genera, y deja instalada la idea de que hay fundas y accesorios para personalizar sin decirlo como venta directa.</p>
+<p><strong>Apertura de caption sugerida:</strong> "Se puso de moda ponerle brillantes a todo, y nosotros no nos pudimos aguantar."</p>
+</div>
+<div class="card">
+<span class="tag">Venta directa</span>
+<h3>Por que tu proximo iPhone puede salir mas barato que el anterior</h3>
+<p><strong>Formato:</strong> carrusel (4 slides)</p>
+<p><strong>Gancho/guion:</strong> portada "Si hace un tiempo miraste precios de iPhone y ahora los volviste a mirar, no es tu imaginacion" - slides explicando en simple que bajaron los impuestos de importacion y por eso los precios oficiales de equipos nuevos vienen acomodandose para abajo, sin tecnicismos ni numeros de decretos. Ultima slide con los modelos disponibles hoy en el local y CTA: "te mostramos los precios actualizados, sin sorpresas."</p>
+<p><strong>Por que puede funcionar:</strong> es una noticia economica real y vigente esta semana que genera dudas concretas en el publico (por que bajo, si me conviene comprar ahora), y explicarla con calma en vez de solo anunciar una oferta refuerza la confianza y el criterio que buscan los clientes de la marca; ademas es un angulo que todavia no se toco y le da actualidad genuina a mostrar precios sin caer en el tono de urgencia gritada.</p>
+<p><strong>Apertura de caption sugerida:</strong> "Che, ¿los precios de iPhone bajaron en serio o es cosa mia? Te lo explicamos rapido."</p>
+</div>
+<div class="card">
+<span class="tag">Clientes</span>
+<h3>El tip para no gastar de mas si viajas el finde largo</h3>
+<p><strong>Formato:</strong> reel corto (tutorial expres, cara + pantalla)</p>
+<p><strong>Gancho/guion:</strong> "Si te vas de viaje el finde largo, esto te conviene hacer antes de salir" - mostrar en pantalla como activar una eSIM de datos para el destino desde configuracion, sin depender del roaming del chip habitual. Cierre a camara: "3 minutos antes de viajar, y te olvidas del roaming carisimo."</p>
+<p><strong>Por que puede funcionar:</strong> el feriado del 17 de agosto genera un fin de semana largo con mucha gente viajando, asi que es un tip con timing real y utilidad inmediata para quien ya tiene un iPhone; es contenido pensado 100% para clientes actuales, refuerza que la marca acompaña despues de la compra, y el tutorial expres es de los formatos que mas guardados genera en el rubro.</p>
+<p><strong>Apertura de caption sugerida:</strong> "Antes de armar la valija para el finde largo, guarda este tip."</p>
+</div>
+</section>
+<section id="noticias">
+<h2>Carruseles de noticias tech</h2>
+<div class="empty">Todavia no se genero la primera tanda de carruseles de noticias.</div>
+</section>
+<section id="historial">
     <h2>Historial</h2>
     <details>
       <summary>Domingo 9 de agosto, 2026</summary>
